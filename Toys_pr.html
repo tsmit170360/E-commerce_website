@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toys</title>
+    <link rel="stylesheet" href="Raja.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3c2dc6ec0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color:black;" >
+<!--navbar-->
+<div class="navbar navbar-expand-sm bg-dark ">
+    <div class="container-fluid">
+        <i class="bi bi-list" id="bars" data-bs-target="#menu" data-bs-toggle="offcanvas" ></i>
+       <ul class="nav-i">
+        <li><a href="Raja.html" style="text-decoration:none; margin-left:150px; color:white;padding-top:15px;-ms-text-justify: auto; ">Home</a></li>
+        <li><a href="Toys_pr.html" style="text-decoration:none; margin-left:100px; color:white;margin-top:15px;">Toys</a></li>
+        <li><a href="Sports_pr.html" style="text-decoration:none;margin-left:100px; color:white;margin-top:15px;">Sports</a></li>
+       </ul>
+
+
+
+
+        <a href="" class="navbar-brand" id="logo" style="margin-left:170px;"></a>
+        <input type="text" name="Search" placeholder="search" id="search-in" class=" form-control p-3">
+
+
+        <i class="bi bi-search" id="search" ></i>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <i class="bi bi-bag" id="cart"></i>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Your Orders:</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="cart2" style="display:flex; float left;">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="login.html"> <i class="bi bi-box-arrow-in-left" id="sign"></i></a>
+    </div>
+</div>
+<!--creating offcanvas-->
+<div id="menu" class="offcanvas offcanvas-start bg-dark text-light d-flex flex-column text-center ">
+
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Menu</h1>
+        <button class="btn-close text-reset bg-light" type="button" data-bs-dismiss="offcanvas"></button>
+    </div>
+<!-- offcanvas -->
+    <div class="offcanvas-body">
+        <ul class="navbar-nav menu-list">
+            <li class="nav-item"><a href="Raja.html" class="nav-link text-light menu-link">Home</a></li>
+            <li class="nav-item"><a href="#products" class="nav-link text-light menu-link " data-bs-toggle="collapse">Products</a></li>
+            <div class="collapse " id="products">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="Toys_pr.html" class="nav-link product-type text-light"> <i class="bi bi-chevron-compact-right"></i> Toys</a></li>
+                    <li class="nav-item"><a href="Sports_pr.html" class="nav-link product-type text-light"> <i class="bi bi-chevron-compact-right"></i>  Sports</a></li>
+                </ul>
+            </div>
+
+            <li class="nav-item"><a href="orders.html" class="nav-link text-light menu-link">Your orders</a></li>
+            <li class="nav-item"><a href="#foot-er" class="nav-link text-light menu-link">Our stores</a></li>
+        </ul>
+    </div>
+    <div class="offcanvas-footer">
+        <i class="bi bi-telephone-inbound" id="call"></i>  <h4 class="text-primary">Call us on: +91-7990122530</h4>
+    </div>
+</div>
+<!--marvel-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="marvel-pr">Marvel</h1>
+<div class="category-info" >
+    <!-- change -->
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="ironman.png" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Iron Man collection</h5>
+            <p class="card-text">Marvel Avengers Iron Man Action Figure Available</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;" onclick="ironman()"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="cap.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Captain America collection</h5>
+            <p class="card-text">Marvel Avengers Captain America   Action Figure Available</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;" onclick="captain()"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="thor.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Hulk collection</h5>
+            <p class="card-text">Marvel Avengers Hulk  Action Figure Available.</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"onclick="hulk()"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="spidey.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Spiderman collection</h5>
+            <p class="card-text">Marvel Avengers Spiderman  Action Figure Available</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"onclick="spiderman()"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--dc-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="dc-pr">Dc</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="batman.png" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Batman  collection</h5>
+            <p class="card-text">>Dc's iconic Batman  Action Figure Available.</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="superman.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Superman Collection</h5>
+            <p class="card-text">Dc's iconic Superman  Action Figure Available</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="flash.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Flash Collection</h5>
+            <p class="card-text">Dc's iconic Flash  Action Figure Available</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="wonder.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Wonder Woman Collection</h5>
+            <p class="card-text">Dc's iconic Wonder Woman  Action Figure Available</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--hotwheels-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="hotwheels-pr">Hotwheels</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="hot1.png" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Hotwheels collection</h5>
+            <p class="card-text">Hot Wheels 10 Cars Gift Pack, Assorted Metal Cars, Multicolor.</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="images/hotwheels_pr.jfif" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title"> Hotwheels collection</h5>
+            <p class="card-text">Hot Wheels 10 Cars  Pack, fast  Metal Cars, Multicolor.</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="hot2.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Hotwheels collection </h5>
+            <p class="card-text">It's an instant collection with a Hot Wheels® 5-Car pack of vehicles, authentic styling.</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="hot3.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Hotwheels collection</h5>
+            <p class="card-text">Let's go a little into the future to see what the Hot Wheels Walmart Exclusive L Cases will look .</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--lego-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="lego-pr">Lego</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="lego1.png" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Lego City  Farm edition </h5>
+            <p class="card-text">Get lego city Farm collection set  with strong and durable parts .</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="images/lego_pr.jfif" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Lego Metro city </h5>
+            <p class="card-text">Get lego city Metro Crafting Box Create your own Minecraft models collection set  .</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="lego2.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Lego Minecraft edition </h5>
+            <p class="card-text">Lego Minecraft , build from the 8-in-1  scenarios to complete other awesome Minecraft biomes</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="lego3.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Lego Creator Family House  </h5>
+            <p class="card-text">Lego Creator Family House, build from the 8-in-1  scenarios to complete other awesome House </p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--0-2years-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="0-2-pr">For 0-2 Years:</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="0_1.png" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Multicolour 5 Rings</h5>
+            <p class="card-text">Toyztrend Ratna's Junior Smiley Stacking Multicolour 5 Rings for Toddlers<br> Starting at 399/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="0_2.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Tormeaw First's Block Shape Sorter</h5>
+            <p class="card-text"> ABCD with Other Shape, Toys for 1 Year Old  Kids .<br> Starting at 499/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="0_3.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title"> Dancing and Spinning Rolling Monkey</h5>
+            <p class="card-text">Sky Tech Dancing and Spinning Rolling Doll Tumble Monkey<br> Starting from 389/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="0_4.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Soft Animal Plush Dog</h5>
+            <p class="card-text">Webby Soft Animal Plush Standing Dog Toy 20cm, Blue <br><br>Starting from 199/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--2-4years-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="2-4-pr">For 2-4 Years:</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="2_1.png" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">ClassMonitor Phonics Learning Kit</h5>
+            <p class="card-text">ClassMonitor Phonics Learning Kit <br> Starting from 1099/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="2_2.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Black Hill Kids Backpack</h5>
+            <p class="card-text">Black Hill  Kids Backpack  Toddler Bag Plush<br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="2_3.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">ToyTastic Transparent Plane </h5>
+            <p class="card-text"> Plane Bump and Go Plane Aeroplane  3D Lightning, Moving Gears<br>Starting from 999/- </p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="2_4.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Educational Toys for 2-4 Years Old</h5>
+            <p class="card-text"> Talking Baby Flash Cards, Learning Resource Electronic Interactive Toys <br> Starting from 899/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--4-6years-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="4-6-pr">For 4-6 Years:</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="4_1.png" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Science Kit for Kids 4-6 Years Old </h5>
+            <p class="card-text">My First Science Kit for Kids 4-8 Years Old<br> Starting from 1299/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="4_2.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">AEXONIZ TOYS 100 Piece Wooden Building Blocks </h5>
+            <p class="card-text">AEXONIZ TOYS 100 Piece Wooden Building Blocks <br> Starting from 699/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="4_3.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Einstein Box</h5>
+            <p class="card-text">Learning and Educational Gift Pack of Toys <br> Starting from 899/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="4_4.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title"> Hop Ball </h5>
+            <p class="card-text">Hop Ball for Kids Ages 4-6Year (with Pump), Sit and Bounce <br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--6-8years-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="6-8-pr">For 6-8 Years:</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="6_1.png" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Sopan Stunt Car</h5>
+            <p class="card-text">Sopan Stunt Car, 4WD 2.4GHz Double Sided Rotating 360 Flips Vehicles<br> Starting from 599/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="6_2.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Plastic Archery Bow and Arrow</h5>
+            <p class="card-text">Plastic Archery Bow and Arrow Toy Set with Target Board, Multicolour<br> Starting from 499/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="6_3.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Strike 4</h5>
+            <p class="card-text">Funskool Games - Strike 4, Get 4 in a Row, Connect Game, 2 Players<br> Starting from 599/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="6_4.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Transformation Car</h5>
+            <p class="card-text">Transformation Car remote control car and robot transformer<br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--Iron man-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="ironman-pr">Ironman:</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="ir_1.png" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title"> Iron Man  Infinity war edition </h5>
+            <p class="card-text"> Iron Man Action Figure Toys Infinity war Super Action Hero Series<br> Starting from 1799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="ir_2.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Iron Man Figurine</h5>
+            <p class="card-text">Wowheads Iron Man Avengers Marvel Polyresin Handmade Semi Real Figurine<br> Starting from 1499/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="ir_3.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Iron Man Movie Series-Iron Man </h5>
+            <p class="card-text">Iron Man Mark 6  Collector's Edition (7 inches)<br> Starting from 2099/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="ir_4.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Iron Man Dance Hero Toys</h5>
+            <p class="card-text">with Light Music Dancing Action Figure w/ Openable Iron Man Mask , Lights <br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--captain-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="captain-pr">Captain America:</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="c1.png" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Captain America Toy </h5>
+            <p class="card-text">Captain America Toy  LED Light Captain America Toy<br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="c2.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Captain America Movable Multipurpose Action </h5>
+            <p class="card-text"> Figure- Miniature Toy FigureSpecial Edition for Car Dashboard<br> Starting from 1799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="c3.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Captain America Steve Rogers Collection </h5>
+            <p class="card-text">Captain America Steve Rogers Collection Doll Action Figurine Model Kids Toys<br> Starting from 1179/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="c4.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Captain America Avengers Infinity War </h5>
+            <p class="card-text" >Captain America Infinity War Endgame Titan Super Hero Series<br> Starting from 2449/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--hulk-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="hulk-pr">Hulk</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="h1.png" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Hulk Avengers: Endgame  </h5>
+            <p class="card-text">Avengers: Endgame MMS558 Scientist  Hulk<br> Starting from 1799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81ynatdQcOL._AC_UL480_QL65_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Hulkbuster </h5>
+            <p class="card-text"> Hulk with Hulkbuster <br> Starting from 1399/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71m1-jNBJdL._SX425_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">CLassic Hulk</h5>
+            <p class="card-text">Avengers Titan Hero Tech Hulk Figure, Multi Color (12-inch)<br> Starting from 2399/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71NUzPhGonL._AC_UL480_QL65_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Red Hulk </h5>
+            <p class="card-text">Red Hulk PVC Figure,Multicolor,One-Size<br> Starting from 2799/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--spidey-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="spidey-pr">Spiderman</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71i35Y8rYsL._AC_UL480_FMwebp_QL65_.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Spider-Man Marvel Titan Hero Series 12-Inch</h5>
+            <p class="card-text">New Red and Black Suit Action Figure Toy, Movie Inspired<br> Starting from 2499/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/51u-EeRGPfL._SY879_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Spiderman Figures</h5>
+            <p class="card-text">Spiderman Toys - Spiderman Action Figures (red and Blue 334)<br> Starting from 1199/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/6179v2qk9qL._SX425_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Spiderman Game suit </h5>
+            <p class="card-text">Spiderman Action Figures- Spiderman Figures - Spiderman Toys (WD Blue)<br> Starting from 3099/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61Y8yvKpAoL._SX425_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Spiderman Movie Suit </h5>
+            <p class="card-text">Spiderman Movie Suit classic Stark Suit <br> Starting from 2699/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--DC-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="noddy-pr">DC </h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61PAE6nGSEL._SX425_.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Batman Movie Suit </h5>
+            <p class="card-text">McFarlane Toys DC Batman: The Batman (Movie) 7" Action Figure with Accessories<br> Starting from 2399/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61sUcN0Wl3L._AC_UL480_FMwebp_QL65_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Superman Movie suit </h5>
+            <p class="card-text">Batman Vs Superman Multiverse Superman 12 Figure, Multi Color<br> Starting from 2799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71CF4WfI3nL._SX425_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Flash new movie suit </h5>
+            <p class="card-text">McFarlane Toys DC Justice League Movie The Flash 7" Action Figure<br> Starting from 2499/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/41HEHd-ftcL.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Wonder Woman movie suit </h5>
+            <p class="card-text">Wonder Woman 2 Action Figure Limited Edition for Car Dashboard,<br> Starting from 2799/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="pokemon-pr">Ben 10 and Doremon</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/717ImBH5+TL._SX425_.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Ben 10 classic  collection</h5>
+            <p class="card-text">Ben 10 classic  collection 10 aliens <br> Starting from 3799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/51Qz9t+zyGL._SX425_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Ben 10 Projector watch </h5>
+            <p class="card-text">Kids Projector Watch Toys for Ben 10 Alien Force <br> Starting from 2799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61z8DXaabwS._SX425_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Doremon plushy</h5>
+            <p class="card-text">Cherubs High Qualtiy Doremon Cartoon Soft Toy (38cm; Large)<br> Starting from 1599/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/31dxOhkQleL._SX300_SY300_QL70_FMwebp_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Nobita Bobble Head </h5>
+            <p class="card-text">Toys Nobita Doraemon Bobble Head for Car Dashboard<br> Starting from 1799/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--minions-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="minions-pr">Pokemon and Minions</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/41IYHyNTpML._SX425_.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title"> Pokemon Action Figures - Set of 6</h5>
+            <p class="card-text"> Generation 1 Pokemon Action Figures - Set of 6<br> Starting from 2799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/31k49y4Af+L.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Pikachu Soft Toy </h5>
+            <p class="card-text">Soft Toy Pokemon Pikachu Stuffed toy-60cm<br> Starting from 999/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>        </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61g-U6W+eqL._SX425_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">10 Pcs Minions Figures</h5>
+            <p class="card-text">10 Pcs Minions Figures Cake Decorating Dolls PVC Model Minions Cute Lovely<br> Starting from 2199/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61P8eUM+imL._SX425_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Minions Bob</h5>
+            <p class="card-text">Tomy Minions - Bob Metacolle Die Cast Metal Figurine<br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+            <a href="#" class="btn btn-danger fav" style="width:50px; height:40px;"><span class="material-symbols-outlined" style="font-size:25px; margin-top:3px;" >
+favorite
+</span>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+     function ironman(){
+const adder = document.getElementById('cart2');
+ adder.innerHTML+= `<div class="card brand-card " style="width: 18rem;">
+
+    <img class="card-img-top" src="ironman.png" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Iron Man collection</h5>
+            <p class="card-text">Marvel Avengers Iron Man Action Figure Available</p>
+                           </div>
+                </div>`;
+}
+function captain(){
+const adder = document.getElementById('cart2');
+ adder.innerHTML+= `<div class="card brand-card " style="width: 18rem;">
+
+    <img class="card-img-top" src="cap.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Captain America collection</h5>
+            <p class="card-text">Marvel Avengers Captain America   Action Figure Available</p>
+                           </div>
+                </div>`;
+}
+function hulk(){
+const adder = document.getElementById('cart2');
+ adder.innerHTML+= `<div class="card brand-card " style="width: 18rem;">
+
+    <img class="card-img-top" src="thor.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Hulk collection</h5>
+            <p class="card-text">Marvel Avengers Hulk  Action Figure Available.</p>
+                           </div>
+                </div>`;
+}
+function spiderman(){
+const adder = document.getElementById('cart2');
+ adder.innerHTML+= `<div class="card brand-card " style="width: 18rem;">
+
+    <img class="card-img-top" src="spidey.png" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Spiderman collection</h5>
+            <p class="card-text">Marvel Avengers Spiderman  Action Figure Available</p>
+                           </div>
+                </div>`;
+}
+
+</script>
+</body>
+
+
+
+
+</html>

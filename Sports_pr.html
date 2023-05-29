@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports</title>
+    <link rel="stylesheet" href="Raja.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3c2dc6ec0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color:black;">
+<!--navbar-->
+
+<div class="navbar navbar-expand-sm bg-dark ">
+    <div class="container-fluid">
+        <i class="bi bi-list" id="bars" data-bs-target="#menu" data-bs-toggle="offcanvas" ></i>
+       <ul class="nav-i">
+        <li><a href="Raja.html" style="text-decoration:none; margin-left:150px; color:white;padding-top:15px;-ms-text-justify: auto; ">Home</a></li>
+        <li><a href="Toys_pr.html" style="text-decoration:none; margin-left:100px; color:white;margin-top:15px;">Toys</a></li>
+        <li><a href="Sports_pr.html" style="text-decoration:none;margin-left:100px; color:white;margin-top:15px;">Sports</a></li>
+       </ul>
+
+
+
+
+        <a href="" class="navbar-brand" id="logo" style="margin-left:170px;"></a>
+        <input type="text" name="Search" placeholder="search" id="search-in" class=" form-control p-3">
+
+
+        <i class="bi bi-search" id="search" ></i>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <i class="bi bi-bag" id="cart"></i>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Your Orders:</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="cart2" style="display:flex; float left;">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="login.html"> <i class="bi bi-box-arrow-in-left" id="sign"></i></a>
+    </div>
+</div>
+<!--creating offcanvas-->
+<div id="menu" class="offcanvas offcanvas-start bg-dark text-light d-flex flex-column text-center ">
+
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Menu</h1>
+        <button class="btn-close text-reset bg-light" type="button" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <ul class="navbar-nav menu-list">
+            <li class="nav-item"><a href="Raja.html" class="nav-link text-light menu-link">Home</a></li>
+            <li class="nav-item"><a href="#products" class="nav-link text-light menu-link " data-bs-toggle="collapse">Products</a></li>
+            <div class="collapse " id="products">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="Toys_pr.html" class="nav-link product-type text-light"> <i class="bi bi-chevron-compact-right"></i> Toys</a></li>
+                    <li class="nav-item"><a href="Sports_pr.html" class="nav-link product-type text-light"> <i class="bi bi-chevron-compact-right"></i>  Sports</a></li>
+                </ul>
+            </div>
+
+            <li class="nav-item"><a href="orders.html" class="nav-link text-light menu-link">Your orders</a></li>
+            <li class="nav-item"><a href="#foot-er" class="nav-link text-light menu-link">Our stores</a></li>
+        </ul>
+    </div>
+    <div class="offcanvas-footer">
+        <i class="bi bi-telephone-inbound" id="call"></i>  <h4 class="text-primary">Call us on: +91-7990122530</h4>
+    </div>
+</div>
+<!--sg-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="sg-pr">SG</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61Qz1cINR4L._SX569_.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">SG Full Kit </h5>
+            <p class="card-text"> 1 Cricket Kit Bag, 1 Cricket Bat, 1 Cricket Helmet, 1 Pair Batting Pads, 1 Pair Thigh Pads, Cricket Ball<br> Starting from 5799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"onclick="ironman()"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+             </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/710pNImAtXS._SX466_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">SG Premium Kit </h5>
+            <p class="card-text">Cricket Kit Includes : Cricket Bat (with cover) + Legguard + Batting Gloves + Kitbag  + Stumps<br> Starting from 8799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+               </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61iOCjB07BL._SY879_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">SG Season Bat </h5>
+            <p class="card-text"><br>SG Phoenix Xtreme Kashmir Willow Cricket Bat <br> Starting from 1799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71A96zK5U+L._SX569_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">SG Max Willow Cricket Bat </h5>
+            <p class="card-text"><br>SG Max Cover Kashmir Willow Cricket Bat<br>  Starting from 2799/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+<!--nivia-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="nivia-pr">Nivia</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/91Ci+jfaofL._SX569_.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Nivia VolleyBall</h5>
+            <p class="card-text">Nivia VolleyBall<br> Starting from 499/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+               </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71mulB7GXnL._SX569_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Nivia Badminton </h5>
+            <p class="card-text">Nivia 7073 Other Solar 5600, G3 Badminton (Black/Green)<br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+             </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81g87b5bzLL._SX679_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Nivia Football</h5>
+            <p class="card-text">Nivia Storm Football - Size 5<br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71TVwd0l4BL._SX569_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Nivia Shoes</h5>
+            <p class="card-text">Nivia Men Carbonite 4.0 Football Shoes<br> Starting from 1399/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+</div>
+<!--cosco-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="cosco-pr">Cosco</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81LgEbaS+sL._SX569_.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Cosco Tennis Ball</h5>
+            <p class="card-text">Cosco Light Cricket Tennis Ball (Pack of 6) <br> Starting from 399/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+                </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/8162oN5+U-L._SX569_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Cosco Volleyball</h5>
+            <p class="card-text">Cosco Acclaim PU Leather Volleyball Size 5<br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+               </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/51vAbmos5uL._SY879_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Cosco Badminton </h5>
+            <p class="card-text">Cosco Badminton Rackets- CB-85, Recreational<br> Starting from 569/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/51xSUDYzl5L.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Cosco  Football</h5>
+            <p class="card-text">Cosco Belgium Cotton Football, Size 3 (Multicolour)<br> Starting from 599/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+</div>
+<!--reebok-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;"  id="reebok-pr">Reebok</h1>
+<div class="category-info">
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61s5hlqX7dL._SY879_.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Reebok Bat</h5>
+            <p class="card-text">Kajtosh Popular Willow Scoop Cricket Bat for Tennis Ball Full Size<br> Starting from 2199/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+                  </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71ZDrTs0w4L._UX625_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Reebok Men's Shoes</h5>
+            <p class="card-text">Reebok Men's Dart Runner Lp Running Shoes<br> Starting from 1799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+             </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71rgozbTXVL._UX625_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Reebok Kid's Shoes</h5>
+            <p class="card-text">Reebok Kid's Rush Runner 3.0 Running Shoes<br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81S8oK+dh7L._UX625_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Reebok Men's  Running Shoes</h5>
+            <p class="card-text">Reebok Men's Future Stride Run Shoe<br> Starting from 1599/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+</div>
+<!--8-10-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="8-10-pr">For 8-10 Years:</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/71-cc6drGrL._SX425_.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Combo Box Cricket Kit </h5>
+            <p class="card-text">Toyshine Speed Up Master Shot Combo Box Cricket Kit for Kids <br> Starting from 999/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+              </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/41mOqanDaTL.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Basket ball kit for kids</h5>
+            <p class="card-text"> basket ball kit for kids  indoor outdoor basket ball hanging<br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+             </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61wZCLiJiXL._SY741_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Boxing kit </h5>
+            <p class="card-text">Boxing kit Yellow Punching Bag, Gloves and Headgear,<br> Starting from 439/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61ER80iH5OL._SX425_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Table Tennis Trainer Indoor</h5>
+            <p class="card-text">Table Tennis Trainer Indoor Outdoor Kids Toy Sports Toys for 6 Years Old <br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+</div>
+<!--10-12-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="10-12-pr">For 10-12 Years:</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/611v+B7eSEL._SX425_.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title"> Foosball Football Table</h5>
+            <p class="card-text">Wembley Foosball Football Table Soccer Game Board <br> Starting from 2799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+             </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/51gPGFfyYOL._SX425_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Air Football</h5>
+            <p class="card-text">Storio Battery Powered Air Hover Football Indoor Hoverball Soccer<br> Starting from 699/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+             </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/41JX5PoJ45L.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Travel Bag</h5>
+            <p class="card-text">MOM CARE Baby Travel Bag ,Kids Duffle Bag for Sports<br> Starting from 2399/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/51psKP94JFL._SX569_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title"> Click and Catch Twin Ball </h5>
+            <p class="card-text">FunBlast Click and Catch Twin Ball Game Indoor Outdoor Toy<br> Starting from 559/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+</div>
+<!--12-14-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="12-14-pr">For 12-14 Years:</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/31SblfL2e6L.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Sports  Football</h5>
+            <p class="card-text">Sports Black & White Football Size-5 ( 1 Football) with || Pump Free<br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+             </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81SBgVHpw1L._UX679_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">BagPack </h5>
+            <p class="card-text">ZIPLINE Unisex Casual Polyester 36 L Backpack School Bag <br> Starting from 1099/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+              </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81TjEZ3YhjL._SX569_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Badminton Racquets </h5>
+            <p class="card-text"> Aluminum 2 Badminton Racquets and 3 Shuttlecocks Set<br> Starting from 559/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81P8t+CLA2L._UX500_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Sparx  Slippers</h5>
+            <p class="card-text">Sparx mens Sf0014g Slippers<br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+</div>
+<!--14+-->
+<h1 class="text-center theme-head text-danger " style=" text-shadow:2px 2px 2px gold;" id="14-pr">For 14+ Years:</h1>
+<div class="category-info" >
+    <!--    1-->
+    <div class="card brand-card "  style="width: 18rem; margin-left:100px;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/61StKt0X+tS._SX569_.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">Hercules Cycle </h5>
+            <p class="card-text">Lifelong LLBC2001 Tribe 20T Cycle (Yellow and Black)<br> Starting from 3799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+                  </div>
+    </div>
+    <!--    2-->
+    <div class="card brand-card " style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/81de3o+HHML._SX569_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title"> Roller Skates Combo </h5>
+            <p class="card-text"> Roller Skates Combo Suitable for Age Group 6 to 14 Years<br><br> Starting from 1799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+              </div>
+    </div>
+    <!--    3-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/612FsaaFYSL._SX679_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">Batting inner gloves </h5>
+            <p class="card-text">Professional Batting Inner gloves <br><br><br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+        </div>
+    </div>
+    <!--    4-->
+    <div class="card brand-card" style="width: 18rem;">
+        <img class="card-img-top" src="https://m.media-amazon.com/images/I/41u7wzeB-sL._UX625_.jpg" alt="Card image cap" class="brand-img" height="180px">
+        <div class="card-body">
+            <h5 class="card-title">SPARX Men's  Sandal </h5>
+            <p class="card-text">SPARX Men's SS0467G Black Camouflage Sandal 9<br><br> Starting from 799/-</p>
+            <a href="#" class="btn btn-dark " id="bag" style="width:50px; height:40px; margin-left:60px;"><i class="bi bi-bag" id="cart" style="font-size:20px; "></i>
+            </a>
+
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    function ironman(){
+const adder = document.getElementById('cart2');
+adder.innerHTML+= `<div class="card brand-card " style="width: 18rem;">
+
+   <img class="card-img-top" src="https://m.media-amazon.com/images/I/61Qz1cINR4L._SX569_.jpg" alt="Card image cap" style="height:180px;"  class="brand-img">
+        <div class="card-body">
+            <h5 class="card-title">SG Full Kit </h5>
+            <p class="card-text"> 1 Cricket Kit Bag, 1 Cricket Bat, 1 Cricket Helmet, 1 Pair Batting Pads, 1 Pair Thigh Pads, Cricket Ball<br> Starting from 5799/-</p>
+                          </div>
+               </div>`;
+}
+function captain(){
+const adder = document.getElementById('cart2');
+adder.innerHTML+= `<div class="card brand-card " style="width: 18rem;">
+
+   <img class="card-img-top" src="cap.png" alt="Card image cap" class="brand-img" height="180px">
+       <div class="card-body">
+           <h5 class="card-title">Captain America collection</h5>
+           <p class="card-text">Marvel Avengers Captain America   Action Figure Available</p>
+                          </div>
+               </div>`;
+}
+function hulk(){
+const adder = document.getElementById('cart2');
+adder.innerHTML+= `<div class="card brand-card " style="width: 18rem;">
+
+   <img class="card-img-top" src="thor.png" alt="Card image cap" class="brand-img" height="180px">
+       <div class="card-body">
+           <h5 class="card-title">Hulk collection</h5>
+           <p class="card-text">Marvel Avengers Hulk  Action Figure Available.</p>
+                          </div>
+               </div>`;
+}
+function spiderman(){
+const adder = document.getElementById('cart2');
+adder.innerHTML+= `<div class="card brand-card " style="width: 18rem;">
+
+   <img class="card-img-top" src="spidey.png" alt="Card image cap" class="brand-img" height="180px">
+       <div class="card-body">
+           <h5 class="card-title">Spiderman collection</h5>
+           <p class="card-text">Marvel Avengers Spiderman  Action Figure Available</p>
+                          </div>
+               </div>`;
+}
+
+</script>
+</body>
+</html>
